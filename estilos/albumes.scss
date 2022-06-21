@@ -1,0 +1,55 @@
+$negroLindo : #0a1214;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__container{
+    height: 30vh;
+    background: $negroLindo ;
+}
+
+.main__container{
+    height:80vh;
+
+    .starina__container{
+    width: 70vh;
+    height: 80%;
+    border:solid $negroLindo 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .starina__img{
+        height: 50%;
+        width: 50%;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .starina__info{
+        height: 90%;
+        width: 50%;
+        overflow: auto;
+    }
+
+    }
+
+
+
+
+
+
+
+}
+
+.footer__container{
+    height: 50vh;
+    background: $negroLindo ;
+}
+
+}

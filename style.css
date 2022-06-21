@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+.header__container {
+  height: 40vh;
+}
+
+.overlay {
+  height: 45vh;
+  background-image: url(images/rojuuHeader.png);
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stars__container {
+  width: 40vh;
+  height: 25vh;
+}
+
+.stars__container img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav__container {
+  height: 5vh;
+  background-image: url(images/crema.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rojuu__image-container h1 {
+  color: #000;
+  margin-left: 20px;
+}
+
+.social__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ig__container, .sp__container, .yt__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 33%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ig__container:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.ig__container:hover i {
+  color: #000;
+}
+
+.sp__container:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.sp__container:hover i {
+  color: #000;
+}
+
+.yt__container:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.yt__container:hover i {
+  color: #000;
+}
+
+.rojuu__image-container h3 {
+  padding-left: 5px;
+}
+
+/*HEADER*/
+/*main*/
+.main__container {
+  height: 320vh;
+}
+
+.albumes__container {
+  height: 150vh;
+  background: #0a1214;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*Starina*/
+.starina__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.starina__image {
+  background-image: url(https://pbs.twimg.com/media/FSV1bNLXsAEMfeX.jpg:large);
+  background-size: cover;
+  height: 30vh;
+  width: 30vh;
+}
+
+.starina__image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.starina__info h3, .korkor__info h3, .roku__info h3, .rojuu__info h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.starina__info, .roku__info, .korkor__info, .rojuu__info {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+/*Starina*/
+/*Korkolake*/
+.korkor__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.korkor__image {
+  background-image: url(https://i.scdn.co/image/ab67616d0000b27309e53d80cd1d69e00104cff5);
+  background-size: cover;
+  height: 30vh;
+  width: 30vh;
+}
+
+.korkor__image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*Korkolake*/
+/*RokuRoku*/
+.roku__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roku__image {
+  background-image: url(https://images.genius.com/a86afde2e8ccda086831d4cc441a5f88.1000x1000x1.png);
+  background-size: cover;
+  height: 30vh;
+  width: 30vh;
+}
+
+.roku__image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*RokuRoku*/
+/*ROJUU*/
+.rojuu__container {
+  height: 80vh;
+  background-image: url(images/crema.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rojuu__container h1 {
+  position: relative;
+  bottom: 1%;
+}
+
+.rojuu__image {
+  height: 30vh;
+  width: 30vh;
+  background-image: url(https://www.parlante.cl/wp-content/uploads/2022/05/ROJUU_GONZA-GALLEGO_SHANGAY9-940x626-1.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.rojuu__info {
+  height: 30vh;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rojuu__info p {
+  width: 50%;
+  text-align: center;
+  color: #000;
+  overflow: auto;
+  border-bottom: solid #0a1214 1px;
+  padding: 4px;
+}
+
+.rojuu__info h3 {
+  color: #000;
+}
+
+/*A partir de aca comienzo a utilizar las propiedades de sass*/
+.merch__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.merch {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+.merch .merch__img-uno, .merch .merch__img-dos, .merch .merch__img-tres {
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border: solid #0a1214 1px;
+}
+
+.merch .merch__info-uno, .merch .merch__info-dos, .merch .merch__info-tres {
+  border: solid #0a1214 1px;
+  padding: 10px;
+  width: 50%;
+}
+
+.merch .merch__info-uno h3, .merch .merch__info-dos h3, .merch .merch__info-tres h3 {
+  text-align: center;
+}
+
+.merch__img-uno {
+  background-image: url(images/korkorlake.jpg);
+}
+
+.merch__img-dos {
+  background-image: url(images/grandeshits.jpg);
+}
+
+.merch__img-tres {
+  background-image: url(images/comic.png);
+}
+
+/*main*/
+/*FOOTER*/
+.footer__container {
+  background-image: url(images/crema.png);
+  height: 10vh;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__social i {
+  font-size: 1.5rem;
+}
+
+/*FOOTER*/
+@media only screen and (min-width: 1200px) {
+  /*NAV*/
+  .social__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social__container .ig__container i {
+    font-size: 1.5rem;
+  }
+  .social__container .sp__container i {
+    font-size: 1.5rem;
+  }
+  .social__container .yt__container i {
+    font-size: 1.5rem;
+  }
+  /*NAV*/
+  .albumes__container {
+    height: 100vh;
+    background: #0a1214;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*Starina*/
+  .starina__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .starina__image {
+    background-image: url(https://pbs.twimg.com/media/FSV1bNLXsAEMfeX.jpg:large);
+    background-size: cover;
+    height: 40vh;
+    width: 40vh;
+  }
+  .starina__image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .starina__info h3, .korkor__info h3, .roku__info h3, .rojuu__info h3 {
+    text-align: center;
+    color: #fff;
+  }
+  .starina__info, .roku__info, .korkor__info, .rojuu__info {
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  /*Starina*/
+  /*Korkolake*/
+  .korkor__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .korkor__image {
+    background-image: url(https://i.scdn.co/image/ab67616d0000b27309e53d80cd1d69e00104cff5);
+    background-size: cover;
+    height: 40vh;
+    width: 40vh;
+  }
+  .korkor__image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /*Korkolake*/
+  /*RokuRoku*/
+  .roku__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .roku__image {
+    background-image: url(https://images.genius.com/a86afde2e8ccda086831d4cc441a5f88.1000x1000x1.png);
+    background-size: cover;
+    height: 40vh;
+    width: 40vh;
+  }
+  .roku__image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  /*rojuu*/
+  .rojuu__container {
+    height: 100vh;
+    background-image: url(images/crema.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rojuu__container h1 {
+    bottom: 10%;
+  }
+  .rojuu__image {
+    height: 30vh;
+    width: 30vh;
+    background-image: url(https://www.parlante.cl/wp-content/uploads/2022/05/ROJUU_GONZA-GALLEGO_SHANGAY9-940x626-1.jpeg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .rojuu__info {
+    height: 30vh;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rojuu__info p {
+    width: 50%;
+    text-align: center;
+    color: #000;
+    overflow: auto;
+    border-bottom: solid #0a1214 1px;
+    padding: 4px;
+  }
+  .rojuu__info h3 {
+    color: #000;
+  }
+  /*rojuu*/
+  /*MERCH*/
+  .merch__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #fff;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .merch__container h2 {
+    display: none;
+  }
+  .merch {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+  }
+  .merch .merch__img-uno, .merch .merch__img-dos, .merch .merch__img-tres {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+  }
+  .merch .merch__info-uno, .merch .merch__info-dos, .merch .merch__info-tres {
+    border: solid black 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+    width: 50%;
+    height: 20%;
+  }
+  .merch__img-uno {
+    background-image: url(images/korkorlake.jpg);
+  }
+  .merch__img-dos {
+    background-image: url(images/grandeshits.jpg);
+  }
+  .merch__img-tres {
+    background-image: url(images/comic.png);
+  }
+  /*MERCH*/
+  .main__container {
+    height: 300vh;
+  }
+  /*Footer*/
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .footer__social i {
+    font-size: 1.5rem;
+    margin-right: 100px;
+  }
+  /*Footer*/
+}
+/*# sourceMappingURL=style.css.map */
