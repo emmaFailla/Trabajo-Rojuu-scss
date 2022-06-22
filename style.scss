@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
+@font-face {
+    font-family:"starina";
+    src: url(../fonts/OldLondon.ttf);
+}
 $negroLindo : #0a1214;
 
 *{
@@ -7,10 +10,15 @@ $negroLindo : #0a1214;
     margin: 0;
     box-sizing: border-box;
     color:#000;
-    font-family: 'Montserrat', sans-serif;
+    
 
 }
-
+html{
+    animation-name: inicio;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    
+}
 /*HEADER*/
 
 .header__container{
@@ -52,59 +60,8 @@ $negroLindo : #0a1214;
     color:#000;
     margin-left: 20px;
 }
-.social__container{
-    display: flex;
-    width: 20vw;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-}
 
-.ig__container,.sp__container,.yt__container{
-    display: flex;
-    height: 100%;
-    width: 33%;
-    align-items: center;
-    justify-content: center;
-}
 
-.ig__container:hover{
-    background: #fff;
-    cursor: pointer;
-
-}
-
-.ig__container:hover i{
-    color:#000;
-
-}
-
-.sp__container:hover{
-    background: #fff;
-    cursor: pointer;
-
-}
-
-.sp__container:hover i{
-    color:#000;
-
-}
-
-.yt__container:hover{
-    background: #fff;
-    cursor: pointer;
-
-}
-
-.yt__container:hover i{
-    color:#000;
-
-}
-
-.rojuu__image-container h3{
-    padding-left:5px;
-    
-}
 
 
 
@@ -114,13 +71,30 @@ $negroLindo : #0a1214;
 /*main*/
 .main__container{
     height: 320vh;
+    font-family:"Montserrat";
 }
+.albumes__box{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $negroLindo;
+    justify-content: space-around;
+
+    .albumes__title{
+        h1{
+            color:#fff;           
+            font-family:"starina";
+                
+            }
+        }
+    }
 
 .albumes__container{
-    height: 150vh;
+    height: 80%;
     background: $negroLindo;
     display: grid;
-    justify-content: space-around;
+    justify-content: center;
     
 }
 
@@ -185,6 +159,8 @@ $negroLindo : #0a1214;
     flex-flow: column;
     align-items: center;
     justify-content: center;
+
+    
 }
 .roku__image{
     background-image: url(https://images.genius.com/a86afde2e8ccda086831d4cc441a5f88.1000x1000x1.png);
@@ -213,6 +189,7 @@ $negroLindo : #0a1214;
     h1{
         position: relative;
         bottom: 1%;
+        font-family: "starina";
     }
 
    
@@ -254,14 +231,29 @@ $negroLindo : #0a1214;
 
 
 /*A partir de aca comienzo a utilizar las propiedades de sass*/
+.merch__box{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
 
+    .merch__title{
+        
+            h2{
+                font-family: "starina";
+            }
+        
+    }
+}
 .merch__container{
     display: flex;
     flex-direction: column;
     background: #fff;
     justify-content: space-evenly;
     align-items: center;
-    height:90vh;
+    height:90%;
     
 
 }
@@ -317,17 +309,22 @@ $negroLindo : #0a1214;
 .footer__container{
     background-image: url(images/crema.png);
     height: 10vh;
+    width: 100%;
 }
 
 .footer__social{
     display: flex;
     height: 100%;
-    width:100%;
+    width:50vw;
     align-items: center;
     justify-content: space-around;
 
     i{
         font-size: 1.5rem;
+
+        &:hover{
+            color:#fff
+        }
     }
 }
 /*FOOTER*/
@@ -374,11 +371,27 @@ $negroLindo : #0a1214;
     
      /*NAV*/
     .albumes__container{
-        height: 100vh;
+        height: 70vh;
         background: $negroLindo;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
+    }
+
+    .albumes__box{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $negroLindo;
+        justify-content: center;
+    
+        .albumes__title{
+            h1{
+                color:#fff;
+            }
+        }
     }
 
     
@@ -507,16 +520,28 @@ $negroLindo : #0a1214;
   /*rojuu*/
 
 /*MERCH*/
+
+.merch__box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 90vh;
+
+    .merch__title{
+        h2{
+            font-family: "starina";
+        }
+    }
+}
 .merch__container{
     display: flex;
     flex-direction: row;
     background: #fff;
     justify-content: center;
-    height:100vh;
+    height:60%;
+    width: 100%;
 
-    h2{
-       display: none;
-    }
+    
     
 
 }
@@ -574,16 +599,25 @@ $negroLindo : #0a1214;
 }
 
 /*Footer*/
+.footer__container{
+    background-image: url(images/crema.png);
+    height: 10vh;
+    width: 100%;
+}
+
 .footer__social{
     display: flex;
     height: 100%;
-    width:100%;
+    width:20vw;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 
     i{
         font-size: 1.5rem;
-        margin-right:100px;
+
+        &:hover{
+            color:#fff
+        }
     }
 }
 
@@ -591,7 +625,19 @@ $negroLindo : #0a1214;
 
 }
 
+@keyframes inicio{
 
+    0%{
+        transform: translateY(-20%);
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+
+}
 
 
 

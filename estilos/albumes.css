@@ -1,21 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap");
+@font-face {
+  font-family: "starina";
+  src: url(../fonts/OldLondon.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-weight: bold;
 }
 
 .header__container {
-  height: 30vh;
-  background: #0a1214;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/estrellas.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__container h1 {
+  color: #fff;
+  margin-left: 20px;
+  font-family: 'starina', sans-serif;
+}
+
+.header__container a {
+  text-decoration: none;
 }
 
 .main__container {
-  height: 80vh;
+  height: 150vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #E6F0FF;
 }
 
-.footer__container {
-  height: 50vh;
-  background: #0a1214;
+.main__container .starina__text {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1rem;
+  height: 40vh;
+  color: #000;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  border-top: solid #000 1px;
+  padding-top: 20px;
+}
+
+.main__container .starina__text h1 {
+  text-align: center;
+}
+
+.main__container .starina__text p {
+  height: 100%;
+  text-align: justify;
+}
+
+.main__container .starina__container {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__container .starina__img {
+  background-image: url(../images/starina.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border: solid black 1px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main__container .starina__img:hover {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.main__container .starina__info {
+  font-family: 'starina', sans-serif;
+  width: 80%;
+  overflow: auto;
+  padding-top: 20px;
+  border-top: solid #000 1px;
+}
+
+.main__container .starina__info h1 {
+  text-align: center;
+}
+
+.footer__container-korkor {
+  height: 40vh;
+  background-image: url(../images/paisaje.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+/*KORKOLAKE*/
+.header__container-korkor {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/paisaje.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__container-korkor h1 {
+  color: #fff;
+  margin-left: 20px;
+  font-family: 'starina', sans-serif;
+}
+
+.header__container-korkor a {
+  text-decoration: none;
+}
+
+.main__container-korkor {
+  height: 150vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #F1FFE8;
+}
+
+.main__container-korkor .korkor__text {
+  font-family: "Montserrat",sans-serif;
+  font-size: 1rem;
+  height: 40vh;
+  color: #000;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  border-top: solid #000 1px;
+  padding-top: 20px;
+}
+
+.main__container-korkor .korkor__text h1 {
+  text-align: center;
+}
+
+.main__container-korkor .korkor__text p {
+  height: 100%;
+  text-align: justify;
+}
+
+.main__container-korkor .korkor__container {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__container-korkor .korkor__img {
+  background-image: url(../images/korkorlake.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border: solid black 1px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.main__container-korkor .korkor__img:hover {
+  height: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.main__container-korkor .korkor__info {
+  font-family: 'starina', sans-serif;
+  width: 80%;
+  overflow: auto;
+  padding-top: 20px;
+  border-top: solid #000 1px;
+}
+
+.main__container-korkor .korkor__info h1 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .main__container .starina__container .starina__img {
+    height: 400px;
+    width: 400px;
+  }
+  .main__container .starina__container .starina__info {
+    font-size: 1.5rem;
+  }
+  .main__container .starina__text {
+    font-size: 1.5rem;
+  }
+  .main__container .starina__text h1 {
+    font-family: 'starina', sans-serif;
+  }
+  /*KORKOR*/
+  .main__container-korkor .korkor__container .korkor__img {
+    height: 450px;
+    width: 450px;
+  }
+  .main__container-korkor .korkor__container .korkor__info {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .main__container-korkor .korkor__text {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .main__container .starina__container .starina__img {
+    height: 450px;
+    width: 450px;
+  }
+  .main__container .starina__container .starina__info {
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .main__container .starina__text {
+    font-size: 1.5rem;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=albumes.css.map */

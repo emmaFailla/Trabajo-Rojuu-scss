@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@font-face {
+  font-family: "starina";
+  src: url(../fonts/OldLondon.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #000;
-  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  -webkit-animation-name: inicio;
+          animation-name: inicio;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 /*HEADER*/
@@ -57,77 +70,43 @@
   margin-left: 20px;
 }
 
-.social__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ig__container, .sp__container, .yt__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 33%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.ig__container:hover {
-  background: #fff;
-  cursor: pointer;
-}
-
-.ig__container:hover i {
-  color: #000;
-}
-
-.sp__container:hover {
-  background: #fff;
-  cursor: pointer;
-}
-
-.sp__container:hover i {
-  color: #000;
-}
-
-.yt__container:hover {
-  background: #fff;
-  cursor: pointer;
-}
-
-.yt__container:hover i {
-  color: #000;
-}
-
-.rojuu__image-container h3 {
-  padding-left: 5px;
-}
-
 /*HEADER*/
 /*main*/
 .main__container {
   height: 320vh;
+  font-family: "Montserrat";
+}
+
+.albumes__box {
+  height: 150vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0a1214;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.albumes__box .albumes__title h1 {
+  color: #fff;
+  font-family: "starina";
 }
 
 .albumes__container {
-  height: 150vh;
+  height: 80%;
   background: #0a1214;
   display: -ms-grid;
   display: grid;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Starina*/
@@ -260,6 +239,7 @@
 .rojuu__container h1 {
   position: relative;
   bottom: 1%;
+  font-family: "starina";
 }
 
 .rojuu__image {
@@ -295,6 +275,28 @@
 }
 
 /*A partir de aca comienzo a utilizar las propiedades de sass*/
+.merch__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.merch__box .merch__title h2 {
+  font-family: "starina";
+}
+
 .merch__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,7 +312,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 90%;
 }
 
 .merch {
@@ -362,6 +364,7 @@
 .footer__container {
   background-image: url(images/crema.png);
   height: 10vh;
+  width: 100%;
 }
 
 .footer__social {
@@ -369,7 +372,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 50vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -379,6 +382,10 @@
 
 .footer__social i {
   font-size: 1.5rem;
+}
+
+.footer__social i:hover {
+  color: #fff;
 }
 
 /*FOOTER*/
@@ -407,7 +414,7 @@
   }
   /*NAV*/
   .albumes__container {
-    height: 100vh;
+    height: 70vh;
     background: #0a1214;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,6 +424,27 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+  }
+  .albumes__box {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #0a1214;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .albumes__box .albumes__title h1 {
+    color: #fff;
   }
   /*Starina*/
   .starina__container {
@@ -566,6 +594,21 @@
   }
   /*rojuu*/
   /*MERCH*/
+  .merch__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+  }
+  .merch__box .merch__title h2 {
+    font-family: "starina";
+  }
   .merch__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -578,10 +621,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
-  }
-  .merch__container h2 {
-    display: none;
+    height: 60%;
+    width: 100%;
   }
   .merch {
     height: 100%;
@@ -635,23 +676,55 @@
     height: 300vh;
   }
   /*Footer*/
+  .footer__container {
+    background-image: url(images/crema.png);
+    height: 10vh;
+    width: 100%;
+  }
   .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 20vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer__social i {
     font-size: 1.5rem;
-    margin-right: 100px;
+  }
+  .footer__social i:hover {
+    color: #fff;
   }
   /*Footer*/
+}
+
+@-webkit-keyframes inicio {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes inicio {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
