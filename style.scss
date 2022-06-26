@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@font-face {
-    font-family:"starina";
-    src: url(../fonts/OldLondon.ttf);
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+// Variables y Mapas
 $negroLindo : #0a1214;
+
+$fonts:(
+    main : "Montserrat",
+    elegante:"Playfair Display"
+
+
+);
+
+
+$elegante:map-get($fonts,elegante);
+$main:map-get($fonts,main);
+
+
+
+
+// Variables y Mapas
 
 *{
     padding: 0;
@@ -19,6 +36,10 @@ html{
     animation-duration: 2s;
     
 }
+
+
+
+
 /*HEADER*/
 
 .header__container{
@@ -48,22 +69,6 @@ html{
 }
 
 
-.nav__container{
-    height: 5vh;
-    background-image: url(images/crema.png);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.rojuu__image-container h1{
-    color:#000;
-    margin-left: 20px;
-}
-
-
-
-
 
 
 /*HEADER*/
@@ -71,7 +76,7 @@ html{
 /*main*/
 .main__container{
     height: 320vh;
-    font-family:"Montserrat";
+    
 }
 .albumes__box{
     height: 150vh;
@@ -84,7 +89,7 @@ html{
     .albumes__title{
         h1{
             color:#fff;           
-            font-family:"starina";
+            font-family: $elegante;
                 
             }
         }
@@ -118,9 +123,10 @@ html{
     cursor: pointer;
 }
 
-.starina__info h3,.korkor__info h3,.roku__info h3,.rojuu__info h3{
+.starina__info h2,.korkor__info h2,.roku__info h2,.rojuu__info h3{
     text-align: center;
     color:#fff;
+    font-family:$main;
 }
 
 .starina__info,.roku__info,.korkor__info,.rojuu__info{
@@ -141,9 +147,7 @@ html{
 
 .korkor__image{
     background-image: url(https://i.scdn.co/image/ab67616d0000b27309e53d80cd1d69e00104cff5);
-    background-size: cover;
-    height: 30vh;
-    width: 30vh;
+   @extend .starina__image
 }
 
 .korkor__image:hover{
@@ -164,9 +168,7 @@ html{
 }
 .roku__image{
     background-image: url(https://images.genius.com/a86afde2e8ccda086831d4cc441a5f88.1000x1000x1.png);
-    background-size: cover;
-    height: 30vh;
-    width: 30vh;
+    @extend .starina__image
 }
 
 .roku__image:hover{
@@ -186,10 +188,11 @@ html{
     align-items:center ;
     justify-content: space-around;
 
-    h1{
+    h3{
         position: relative;
         bottom: 1%;
-        font-family: "starina";
+        font-family:$elegante;
+        font-size: 1.5rem;
     }
 
    
@@ -219,11 +222,13 @@ html{
         overflow: auto;
         border-bottom: solid $negroLindo 1px;
         padding: 4px;
+        font-family: $elegante;
         
         
     }
     h3{
         color:#000;
+        font-family:$elegante;
     }
     
 }
@@ -241,8 +246,9 @@ html{
 
     .merch__title{
         
-            h2{
-                font-family: "starina";
+            h4{
+                font-family:$elegante;
+                font-size:1.5rem;
             }
         
     }
@@ -281,8 +287,10 @@ html{
     border: solid $negroLindo 1px;
     padding:10px;
     width: 50%;
+    font-family:$main;
+    font-size:1.5rem;
     
-    h3{ text-align: center;
+    h5{ text-align: center;
         
     }
 }
@@ -305,6 +313,15 @@ html{
 
 
 /*main*/
+
+@mixin redes {
+    height: 100%;
+    width:33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 /*FOOTER*/
 .footer__container{
     background-image: url(images/crema.png);
@@ -319,11 +336,22 @@ html{
     align-items: center;
     justify-content: space-around;
 
+    .redes__container{
+        @include redes
+
+        &:hover {
+            background:#fff;
+            
+        }
+
+
+    }
+
     i{
         font-size: 1.5rem;
 
         &:hover{
-            color:#fff
+            cursor:pointer;
         }
     }
 }
@@ -416,7 +444,7 @@ html{
         cursor: pointer;
     }
     
-    .starina__info h3,.korkor__info h3,.roku__info h3,.rojuu__info h3{
+    .starina__info h2,.korkor__info h2,.roku__info h2,.rojuu__info h3{
         text-align: center;
         color:#fff;
     }
@@ -480,7 +508,7 @@ html{
     align-items:center ;
     justify-content: center;
 
-    h1{
+    h3{
         bottom: 10%;
     }
     
@@ -509,6 +537,7 @@ html{
         overflow: auto;
         border-bottom: solid $negroLindo 1px;
         padding: 4px;
+        font-size: 1.2rem;
         
         
     }
@@ -528,8 +557,8 @@ html{
     height: 90vh;
 
     .merch__title{
-        h2{
-            font-family: "starina";
+        h4{
+            font-family:$elegante;
         }
     }
 }
@@ -616,7 +645,7 @@ html{
         font-size: 1.5rem;
 
         &:hover{
-            color:#fff
+            cursor:pointer;
         }
     }
 }

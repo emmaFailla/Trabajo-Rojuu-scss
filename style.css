@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-@font-face {
-  font-family: "starina";
-  src: url(../fonts/OldLondon.ttf);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -51,30 +47,10 @@ html {
   width: 100%;
 }
 
-.nav__container {
-  height: 5vh;
-  background-image: url(images/crema.png);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.rojuu__image-container h1 {
-  color: #000;
-  margin-left: 20px;
-}
-
 /*HEADER*/
 /*main*/
 .main__container {
   height: 320vh;
-  font-family: "Montserrat";
 }
 
 .albumes__box {
@@ -96,7 +72,7 @@ html {
 
 .albumes__box .albumes__title h1 {
   color: #fff;
-  font-family: "starina";
+  font-family: "Playfair Display";
 }
 
 .albumes__container {
@@ -126,21 +102,22 @@ html {
           justify-content: center;
 }
 
-.starina__image {
+.starina__image, .korkor__image, .roku__image {
   background-image: url(https://pbs.twimg.com/media/FSV1bNLXsAEMfeX.jpg:large);
   background-size: cover;
   height: 30vh;
   width: 30vh;
 }
 
-.starina__image:hover {
+.starina__image:hover, .korkor__image:hover, .roku__image:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.starina__info h3, .korkor__info h3, .roku__info h3, .rojuu__info h3 {
+.starina__info h2, .korkor__info h2, .roku__info h2, .rojuu__info h3 {
   text-align: center;
   color: #fff;
+  font-family: "Montserrat";
 }
 
 .starina__info, .roku__info, .korkor__info, .rojuu__info {
@@ -177,9 +154,6 @@ html {
 
 .korkor__image {
   background-image: url(https://i.scdn.co/image/ab67616d0000b27309e53d80cd1d69e00104cff5);
-  background-size: cover;
-  height: 30vh;
-  width: 30vh;
 }
 
 .korkor__image:hover {
@@ -207,9 +181,6 @@ html {
 
 .roku__image {
   background-image: url(https://images.genius.com/a86afde2e8ccda086831d4cc441a5f88.1000x1000x1.png);
-  background-size: cover;
-  height: 30vh;
-  width: 30vh;
 }
 
 .roku__image:hover {
@@ -236,10 +207,11 @@ html {
       justify-content: space-around;
 }
 
-.rojuu__container h1 {
+.rojuu__container h3 {
   position: relative;
   bottom: 1%;
-  font-family: "starina";
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
 }
 
 .rojuu__image {
@@ -268,10 +240,12 @@ html {
   overflow: auto;
   border-bottom: solid #0a1214 1px;
   padding: 4px;
+  font-family: "Playfair Display";
 }
 
 .rojuu__info h3 {
   color: #000;
+  font-family: "Playfair Display";
 }
 
 /*A partir de aca comienzo a utilizar las propiedades de sass*/
@@ -293,8 +267,9 @@ html {
   height: 90vh;
 }
 
-.merch__box .merch__title h2 {
-  font-family: "starina";
+.merch__box .merch__title h4 {
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
 }
 
 .merch__container {
@@ -341,9 +316,11 @@ html {
   border: solid #0a1214 1px;
   padding: 10px;
   width: 50%;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
 }
 
-.merch .merch__info-uno h3, .merch .merch__info-dos h3, .merch .merch__info-tres h3 {
+.merch .merch__info-uno h5, .merch .merch__info-dos h5, .merch .merch__info-tres h5 {
   text-align: center;
 }
 
@@ -380,12 +357,30 @@ html {
       justify-content: space-around;
 }
 
+.footer__social .redes__container {
+  height: 100%;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__social .redes__container:hover {
+  background: #fff;
+}
+
 .footer__social i {
   font-size: 1.5rem;
 }
 
 .footer__social i:hover {
-  color: #fff;
+  cursor: pointer;
 }
 
 /*FOOTER*/
@@ -462,17 +457,17 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .starina__image {
+  .starina__image, .korkor__image, .roku__image {
     background-image: url(https://pbs.twimg.com/media/FSV1bNLXsAEMfeX.jpg:large);
     background-size: cover;
     height: 40vh;
     width: 40vh;
   }
-  .starina__image:hover {
+  .starina__image:hover, .korkor__image:hover, .roku__image:hover {
     opacity: 0.5;
     cursor: pointer;
   }
-  .starina__info h3, .korkor__info h3, .roku__info h3, .rojuu__info h3 {
+  .starina__info h2, .korkor__info h2, .roku__info h2, .rojuu__info h3 {
     text-align: center;
     color: #fff;
   }
@@ -561,7 +556,7 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .rojuu__container h1 {
+  .rojuu__container h3 {
     bottom: 10%;
   }
   .rojuu__image {
@@ -588,6 +583,7 @@ html {
     overflow: auto;
     border-bottom: solid #0a1214 1px;
     padding: 4px;
+    font-size: 1.2rem;
   }
   .rojuu__info h3 {
     color: #000;
@@ -606,8 +602,8 @@ html {
             flex-direction: column;
     height: 90vh;
   }
-  .merch__box .merch__title h2 {
-    font-family: "starina";
+  .merch__box .merch__title h4 {
+    font-family: "Playfair Display";
   }
   .merch__container {
     display: -webkit-box;
@@ -697,7 +693,7 @@ html {
     font-size: 1.5rem;
   }
   .footer__social i:hover {
-    color: #fff;
+    cursor: pointer;
   }
   /*Footer*/
 }

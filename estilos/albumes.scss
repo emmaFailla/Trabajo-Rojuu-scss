@@ -103,16 +103,15 @@
 
 
 
-.footer__container-korkor{
-    height: 40vh;
-    background-image:url(../images/paisaje.jpg);
-    background-position:center center;
-    background-size: cover;
-}
+
 
 /*KORKOLAKE*/
 
-
+.footer__container-korkor{
+    height: 40vh;
+    background:#000;
+    
+}
 
 .header__container-korkor{
     height: 10vh;
@@ -192,13 +191,14 @@
     }
 
     .korkor__info{
-        font-family: 'starina', sans-serif;
+        font-family: 'Montserrat', sans-serif;
        width: 80%;
         overflow: auto;
         padding-top: 20px;
         border-top: solid #000 1px;
         h1{
             text-align: center;
+            font-family: "starina";
         }
     }
 
@@ -210,7 +210,122 @@
 
 
 /*KORKOR*/
-/*STARINA*/
+
+
+/*ROKU ROKU*/
+.header__container-roku{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background:#259451;
+    background-position:center center;
+    background-size: cover;
+
+    h1{
+        color:#fff;
+        margin-left: 20px;
+        font-family: 'starina', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.main__container-roku{
+    height:150vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:#d3fac3;
+
+
+    .roku__text{
+        font-family: "Montserrat",sans-serif;
+        font-size: 1rem;
+        height:40vh;
+        color:#000;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        border-top: solid #000 1px;
+        padding-top: 20px;
+
+
+        h1{
+            text-align: center;
+        }
+        p{
+            height: 100%;
+            text-align: justify;
+            
+        }
+    }
+
+    .roku__container{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .roku__img{
+        background-image: url(../images/roku.jpg);
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        border: solid black 1px;
+        transition: 1s all;
+        flex-shrink: 0;
+
+        &:hover{
+            height: 300px;
+            width: 300px;
+            cursor: pointer;
+        }
+    }
+
+    .roku__info{
+        
+       width: 80%;
+        overflow: auto;
+        padding-top: 20px;
+        border-top: solid #000 1px;
+        font-family: 'Montserrat', sans-serif;
+        h1{
+            text-align: center;
+            font-family: 'starina', sans-serif;
+        }
+    }
+
+    }
+
+    .footer__container-roku{
+        height: 40vh;
+        background:#259451;
+        
+    }
+
+
+/*roku roku*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width:600px){
    
 
@@ -232,33 +347,14 @@
             }
         }
 
-        /*KORKORLAKE*/
-        .korkor__container{
-            .korkor__img{
-        height: 400px;
-        width: 400px;
-            }
-    
-            .starina__info{
-                font-size: 1.5rem;
-            }
-        }
-            .starina__text{
-                font-size: 1.5rem;
-                h1{
-                    font-family: 'starina', sans-serif;
-                }
-            }
-    }
+}
 
 @media only screen and (min-width:1500px){
     .main__container{
         .starina__container{
         .starina__img{
     height: 450px;
-    width: 450px;
-
-    
+    width: 450px;    
         }
 
         .starina__info{
@@ -267,8 +363,99 @@
         }
     }
         .starina__text{
+            font-size: 1rem;
+            width: 50%;
+        }
+    }
+
+    /*korkolake*/
+
+    
+}
+
+@media only screen and (min-width:600px){
+    .korkor__container{
+        .korkor__img{
+    height: 400px;
+    width: 400px;
+        }
+
+        .korkor__info{
+            font-size: 1.5rem;
+        }
+    }
+        .korkor__text{
+            font-size: 1.5rem;
+            h1{
+                font-family: 'starina', sans-serif;
+            }
+        }
+}
+}
+@media only screen and (min-width:1500px){
+.main__container-korkor{
+    .korkor__container{
+    .korkor__img{
+height: 400px;
+width: 400px;    
+    }
+
+    .korkor__info{
+        font-size: 1.5rem;
+        width: 50%;
+    }
+}
+    .korkor__text{
+        font-size: 1rem;
+        width: 50%;
+    }
+}
+    
+
+}
+
+/*roku roku*/
+
+
+
+    
+@media only screen and (min-width:1500px){
+    .main__container-roku{
+        .roku__container{
+        .roku__img{
+            height: 300px;
+            width: 300px;    
+        }
+    
+        .roku__info{
             font-size: 1.5rem;
             width: 50%;
         }
     }
-}
+        .roku__text{
+            font-size: 1rem;
+            width: 50%;
+        }
+    }
+        
+    
+    }
+
+    @media only screen and( min-width:600px){
+        .roku__container{
+            .roku__img{
+                height: 300px;
+                width: 300px;
+            }
+    
+            .roku__info{
+                font-size: 1.5rem;
+            }
+        }
+            .roku__text{
+                font-size: 1.5rem;
+                h1{
+                    font-family: 'starina', sans-serif;
+                }
+            }
+    }
