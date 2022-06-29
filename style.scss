@@ -1,32 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import 'variables/variablesColores';
+@import 'variables/variablesMedidas';
+@import 'variables/variablesFonts';
 
 
-// Variables y Mapas
-$negroLindo : #0a1214;
-
-$fonts:(
-    main : "Montserrat",
-    elegante:"Playfair Display"
-
-
-);
-
-
-$elegante:map-get($fonts,elegante);
-$main:map-get($fonts,main);
-
-
-
-
-// Variables y Mapas
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:#000;
+    color:$negro
     
 
 }
@@ -62,8 +46,8 @@ html{
     height:25vh;
 
     img{
-        height:100%;
-        width:100%;
+        height:$maximo;
+        width:$maximo;
     }
 
 }
@@ -88,7 +72,7 @@ html{
 
     .albumes__title{
         h1{
-            color:#fff;           
+            color:$blanco;           
             font-family: $elegante;
                 
             }
@@ -125,7 +109,7 @@ html{
 
 .starina__info h2,.korkor__info h2,.roku__info h2,.rojuu__info h3{
     text-align: center;
-    color:#fff;
+    color:$blanco;
     font-family:$main;
 }
 
@@ -139,10 +123,7 @@ html{
 
 /*Korkolake*/
 .korkor__container{
-    display:flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+   @extend .starina__container
 }
 
 .korkor__image{
@@ -159,10 +140,7 @@ html{
 /*RokuRoku*/
 
 .roku__container{
-    display:flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    @extend .starina__container
 
     
 }
@@ -218,7 +196,7 @@ html{
     p{
         width: 50%;
         text-align: center;
-        color:#000;
+        color:$negro;
         overflow: auto;
         border-bottom: solid $negroLindo 1px;
         padding: 4px;
@@ -227,7 +205,7 @@ html{
         
     }
     h3{
-        color:#000;
+        color:$negro;
         font-family:$elegante;
     }
     
@@ -239,7 +217,7 @@ html{
 .merch__box{
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: $blanco;
     justify-content: center;
     align-items: center;
     height:90vh;
@@ -256,7 +234,7 @@ html{
 .merch__container{
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: $blanco;
     justify-content: space-evenly;
     align-items: center;
     height:90%;
@@ -267,10 +245,10 @@ html{
 .merch{
     height: 30%;
     display: flex;
-    width: 100%;
+    width: $maximo;
     justify-content: space-evenly;
     align-items: center;
-    background:white;
+    background:$blanco;
 
   
     
@@ -315,7 +293,7 @@ html{
 /*main*/
 
 @mixin redes {
-    height: 100%;
+    height: $maximo;
     width:33%;
     display: flex;
     align-items: center;
@@ -326,12 +304,12 @@ html{
 .footer__container{
     background-image: url(images/crema.png);
     height: 10vh;
-    width: 100%;
+    width: $maximo;
 }
 
 .footer__social{
     display: flex;
-    height: 100%;
+    height: $maximo;
     width:50vw;
     align-items: center;
     justify-content: space-around;
@@ -340,20 +318,23 @@ html{
         @include redes
 
         &:hover {
-            background:#fff;
+            background:$blanco;
             
         }
-
-
-    }
-
-    i{
+        a{
+            i{
         font-size: 1.5rem;
 
         &:hover{
             cursor:pointer;
         }
     }
+        }
+        
+
+    }
+
+    
 }
 /*FOOTER*/
 
@@ -367,7 +348,7 @@ html{
         display: flex;
         width: 20vw;
         justify-content: space-around;
-        height: 100%;
+        height: $maximo;
         align-items: center;
 
         .ig__container{
@@ -400,11 +381,11 @@ html{
      /*NAV*/
     .albumes__container{
         height: 70vh;
-        background: $negroLindo;
+        background:$negroLindo;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
+        width: $maximo;
     }
 
     .albumes__box{
@@ -417,7 +398,7 @@ html{
     
         .albumes__title{
             h1{
-                color:#fff;
+                color:$blanco;
             }
         }
     }
@@ -446,7 +427,7 @@ html{
     
     .starina__info h2,.korkor__info h2,.roku__info h2,.rojuu__info h3{
         text-align: center;
-        color:#fff;
+        color:$blanco;
     }
     
     .starina__info,.roku__info,.korkor__info,.rojuu__info{
@@ -533,7 +514,7 @@ html{
     p{
         width: 50%;
         text-align: center;
-        color:#000;
+        color:$negro;
         overflow: auto;
         border-bottom: solid $negroLindo 1px;
         padding: 4px;
@@ -542,7 +523,7 @@ html{
         
     }
     h3{
-        color:#000;
+        color:$negro
     }
     
 }
@@ -554,7 +535,7 @@ html{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
 
     .merch__title{
         h4{
@@ -565,10 +546,10 @@ html{
 .merch__container{
     display: flex;
     flex-direction: row;
-    background: #fff;
+    background: $blanco;
     justify-content: center;
     height:60%;
-    width: 100%;
+    width: $maximo;
 
     
     
@@ -576,13 +557,13 @@ html{
 }
 
 .merch{
-    height: 100%;
+    height: $maximo;
     display: flex;
     flex-direction: column;
     width: 20%;
     justify-content: center;
     align-items: center;
-    background:white;
+    background:$blanco;
     
     
 
@@ -595,7 +576,7 @@ html{
 }
 
     .merch__info-uno,.merch__info-dos,.merch__info-tres{
-    border:solid black 0px;
+    border:solid $negro 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -631,12 +612,12 @@ html{
 .footer__container{
     background-image: url(images/crema.png);
     height: 10vh;
-    width: 100%;
+    width: $maximo;
 }
 
 .footer__social{
     display: flex;
-    height: 100%;
+    height: $maximo;
     width:20vw;
     align-items: center;
     justify-content: space-around;

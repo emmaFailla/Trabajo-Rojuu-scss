@@ -4,6 +4,12 @@
     font-family:"starina";
     src: url(../fonts/OldLondon.ttf);
 }
+@import '../variables/variablesColores';
+@import '../variables/variablesMedidas'
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -20,7 +26,7 @@
     background-size: cover;
 
     h1{
-        color:#fff;
+        color: $blanco;
         margin-left: 20px;
         font-family: 'starina', sans-serif;
     }
@@ -35,21 +41,21 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background:#E6F0FF;
+    background:$fondoStarina;
 
 
     .starina__text{
         font-family: "Montserrat",sans-serif;
         font-size: 1rem;
         height:40vh;
-        color:#000;
+        color:$negro;
         width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         overflow: auto;
-        border-top: solid #000 1px;
+        border-top: solid $negro 1px;
         padding-top: 20px;
 
 
@@ -57,14 +63,14 @@
             text-align: center;
         }
         p{
-            height: 100%;
+            height: $maximo;
             text-align: justify;
             
         }
     }
 
     .starina__container{
-    width: 100%;
+    width: $maximo;
     height: 100vh;
     flex-direction: column;
     display: flex;
@@ -77,7 +83,7 @@
         background-size: cover;
         height: 300px;
         width: 300px;
-        border: solid black 1px;
+        border: solid $negro 1px;
         transition: 1s all;
         flex-shrink: 0;
 
@@ -93,7 +99,7 @@
        width: 80%;
         overflow: auto;
         padding-top: 20px;
-        border-top: solid #000 1px;
+        border-top: solid $negro 1px;
         h1{
             text-align: center;
         }
@@ -109,7 +115,7 @@
 
 .footer__container-korkor{
     height: 40vh;
-    background:#000;
+    background:$negro;
     
 }
 
@@ -122,7 +128,7 @@
     background-size: cover;
 
     h1{
-        color:#fff;
+        color:$blanco;
         margin-left: 20px;
         font-family: 'starina', sans-serif;
     }
@@ -132,46 +138,26 @@
 }
 
 .main__container-korkor{
-    height:150vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background:#F1FFE8;
+    @extend .main__container;
+    background:$fondoKorkor;
 
 
     .korkor__text{
-        font-family: "Montserrat",sans-serif;
-        font-size: 1rem;
-        height:40vh;
-        color:#000;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        overflow: auto;
-        border-top: solid #000 1px;
-        padding-top: 20px;
+        @extend .starina__text;
 
 
         h1{
             text-align: center;
         }
         p{
-            height: 100%;
+            height: $maximo;
             text-align: justify;
             
         }
     }
 
     .korkor__container{
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @extend .starina__container
 }
 
     .korkor__img{
@@ -179,7 +165,7 @@
         background-size: cover;
         height: 300px;
         width: 300px;
-        border: solid black 1px;
+        border: solid $negro 1px;
         transition: 1s all;
         flex-shrink: 0;
 
@@ -195,7 +181,7 @@
        width: 80%;
         overflow: auto;
         padding-top: 20px;
-        border-top: solid #000 1px;
+        border-top: solid $negro 1px;
         h1{
             text-align: center;
             font-family: "starina";
@@ -217,12 +203,12 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    background:#259451;
+    background:$verdeRoku;
     background-position:center center;
     background-size: cover;
 
     h1{
-        color:#fff;
+        color:$blanco;
         margin-left: 20px;
         font-family: 'starina', sans-serif;
     }
@@ -232,46 +218,26 @@
 }
 
 .main__container-roku{
-    height:150vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background:#d3fac3;
+    @extend .main__container;
+    background:$fondoRoku;
 
 
     .roku__text{
-        font-family: "Montserrat",sans-serif;
-        font-size: 1rem;
-        height:40vh;
-        color:#000;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        overflow: auto;
-        border-top: solid #000 1px;
-        padding-top: 20px;
+        @extend .starina__text;
 
 
         h1{
             text-align: center;
         }
         p{
-            height: 100%;
+            height: $maximo;
             text-align: justify;
             
         }
     }
 
     .roku__container{
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+        @extend .starina__container
 }
 
     .roku__img{
@@ -279,7 +245,7 @@
         background-size: cover;
         height: 300px;
         width: 300px;
-        border: solid black 1px;
+        border: solid $negro 1px;
         transition: 1s all;
         flex-shrink: 0;
 
@@ -295,7 +261,7 @@
        width: 80%;
         overflow: auto;
         padding-top: 20px;
-        border-top: solid #000 1px;
+        border-top: solid $negro 1px;
         font-family: 'Montserrat', sans-serif;
         h1{
             text-align: center;
@@ -307,7 +273,7 @@
 
     .footer__container-roku{
         height: 40vh;
-        background:#259451;
+        background:$verdeRoku;
         
     }
 
@@ -363,8 +329,16 @@
         }
     }
         .starina__text{
-            font-size: 1rem;
+            font-size: 1.5rem;
             width: 50%;
+
+            h3{
+                font-size: 1.5rem;
+            }
+    
+            p{
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -408,6 +382,14 @@ width: 400px;
     .korkor__text{
         font-size: 1rem;
         width: 50%;
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
     }
 }
     
@@ -435,6 +417,14 @@ width: 400px;
         .roku__text{
             font-size: 1rem;
             width: 50%;
+
+            h3{
+                font-size: 1.5rem;
+            }
+    
+            p{
+                font-size: 1.2rem;
+            }
         }
     }
         
@@ -456,6 +446,7 @@ width: 400px;
                 font-size: 1.5rem;
                 h1{
                     font-family: 'starina', sans-serif;
+                    font-size: 1.5rem;
                 }
             }
     }
