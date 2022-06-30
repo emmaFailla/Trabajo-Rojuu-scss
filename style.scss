@@ -3,6 +3,7 @@
 @import 'variables/variablesColores';
 @import 'variables/variablesMedidas';
 @import 'variables/variablesFonts';
+@import 'estilos/albumes';
 
 
 
@@ -14,7 +15,7 @@
     
 
 }
-html{
+.index__html{
     animation-name: inicio;
     animation-iteration-count: 1;
     animation-duration: 2s;
