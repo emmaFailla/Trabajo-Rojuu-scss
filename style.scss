@@ -4,7 +4,10 @@
 @import 'variables/variablesMedidas';
 @import 'variables/variablesFonts';
 @import 'estilos/albumes';
-
+@font-face {
+    font-family:"starina";
+    src: url(../fonts/OldLondon.ttf);
+}
 
 
 *{
@@ -60,7 +63,7 @@
 
 /*main*/
 .main__container{
-    height: 320vh;
+    height: 420vh;
     
 }
 .albumes__box{
@@ -112,6 +115,7 @@
     text-align: center;
     color:$blanco;
     font-family:$main;
+    font-size: 1.5rem;
 }
 
 .starina__info,.roku__info,.korkor__info,.rojuu__info{
@@ -301,11 +305,73 @@
     justify-content: center;
 
 }
+
+//CARROUSEL
+
+.carrousel__box{
+    background:$negroLindo ;
+    height: 100vh;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    flex-flow: column;
+    
+
+    h6{
+        color:$blanco;
+        font-size: 1.5rem;
+        font-family: $elegante
+    }
+
+    .carrousel__container{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    overflow: hidden;
+
+        .slide{
+            width: 50%;
+            height: 50%;
+            opacity: 0;
+        }
+    }
+
+    
+
+    
+}
+
+
+//CARROUSEL
+
 /*FOOTER*/
 .footer__container{
     background-image: url(images/crema.png);
     height: 10vh;
     width: $maximo;
+    display: flex;
+    flex-flow:row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contact__container{
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    &:hover{
+        background: $blanco;
+    }
+
+    a{
+        text-decoration:none;
+        font-family:$elegante;
+        font-size: 1.5rem;
+    }
 }
 
 .footer__social{
@@ -316,6 +382,7 @@
     justify-content: space-around;
 
     .redes__container{
+       
         @include redes
 
         &:hover {
@@ -339,10 +406,146 @@
 }
 /*FOOTER*/
 
+//CONTACTO PARTE FINAL
+.header__contacto{
+    height: 5vh;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+
+    a{
+        font-family: "starina";
+        font-size: 1.5rem;
+        text-decoration:none;
+        margin-left:10px;
+    }
+}
+
+.main__contacto{
+    height: 85vh;
+    background-image: url(images/concierto6.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items:center
+
+    
+}
+
+.grid__container{
+        
+        display: flex;
+        
+        height: 90%;
+        width: 90%;
+        gap: 2rem;
+
+        .grid-1{
+            width: 70%;
+            background:#F9F9F9;
+            
+            font-family: "starina";
+            display: flex;
+            flex-flow:column;
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            
+            form{
+                height: 70%;
+                width: 70%;
+                display:flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+                align-items: center;
+                background: lightgrey;
+                
+                border-radius: 5px;
+                
+                    textarea{
+                        resize: none;
+                    }
+
+                    .input__contacto{
+                        
+                        padding: 10px;
+
+                    }
+                    
+                    .mensaje__container{
+                        font-family: $elegante ;
+                        font-size: .5rem;
+                        display: flex;
+                        flex-flow:column ;
+                        align-items: center;
+
+                        h2{
+                            margin-bottom: 3px;
+                        }
+                        
+                    }
+
+                    .enviar{
+                        font-family:$elegante ;
+                        font-size: .8rem;
+                        padding:1rem;
+                        cursor: pointer;
+                        border: none;
+
+                        &:hover{
+                            background-color: #fff;
+                        }
+                    }
+            }
+        }
+
+        .grid-2{
+            width: 30%;
+            background:#F9F9F9;
+            
+            
+            
+            .social__contacto{
+                height: 100%;
+                display: flex;
+                flex-flow:column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                i{
+                    font-size: 10rem;
+                    cursor: pointer;
+                }
+
+                .instagram__contact:hover{
+                    color: #9a36b3;
+                }
+               .youtube__contact:hover{
+                    color: #ff0000;
+                }
+
+                .spotify__contact:hover{
+                    color: #1dd05d;
+                }
+            }
+
+        }
+    }
+
+
+.footer__contacto{
+    background: #F9F9F9;
+    height: 10vh;
+}
+
+//CONTACTO PARTE FINAL
+
 
 @media only screen and (min-width:1200px){
-
-
+    .main__container{
+        height:400vh;
+    }
 
     /*NAV*/
     .social__container{
@@ -605,9 +808,7 @@
 }
 /*MERCH*/
  
-.main__container{
-    height:300vh;
-}
+
 
 /*Footer*/
 .footer__container{
@@ -631,10 +832,44 @@
         }
     }
 }
+}
+
+@media only screen and (max-width : 800px){
+    
+    //Aca me equivoque y no hice movile first pero como es un diseño simple no hubo mucho inconveniente
+    
+    
+
+    .grid__container{
+        justify-content: center;
+        
+        .grid-1{
+        height: 100%;
+        width: 90vw;
+        
+        form{
+            height: 80%;
+            width: 90%;
+
+            textarea{
+                width: 90%;
+                
+            }
+        }
+    }
+
+    .grid-2{
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    }
+}  
+ 
 
 /*Footer*/
 
-}
+
 
 @keyframes inicio{
 

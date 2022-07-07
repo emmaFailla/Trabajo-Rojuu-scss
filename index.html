@@ -7,7 +7,7 @@
     <meta name="keywords" content="rojuu, kor kor lake, starina, roku roku, roc jou, tofu delivery">
     <meta name="author" content="Emmanuel Failla">
     <meta name="robots" content="index,follow">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/starina.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,21 +70,18 @@
         <!--Roju bio-->
         <div class="rojuu__container">
 
-            <h3>Biografia</h3>
+            <h3 data-aos="fade-up" >Biografia</h3>
 
-                <div class="rojuu__image">
+                <div data-aos="fade-up" class="rojuu__image">
                 </div>
                
 
-                <div class="rojuu__info">
+                <div data-aos="fade-up" class="rojuu__info">
                     <h3>Rojuu</h3>
                     <p><b>Rojuu es un artista de Barcelona (España), nacido en el 14 de marzo de 2003 el cual hace rap alternativo mezclado con otros géneros como el Grunge, punk, lo-fi, cloud trap, heavy metal entre otros.Comenzó su carrera siendo un creador de contenido en Youtube con tan sólo unos pocos años, utilizando su canal, para comentar y dar sus opiniones acerca de la música urbana a nivel hispanohablante. A los 14, llegó a ser remunerado con centenares de euros. En el 2016 decidió comenzar a hacer su propia música, enfocada a un trasfondo adolescente unido a las drogas y suicidios.</b></p>
                 </div>
         </div>
         <!--Roju bio-->
-
-
-
 
 
 
@@ -94,9 +91,9 @@
 
         <div class="merch__title"><h4>Merch</h4></div>
 
-        <div class="merch__container">
+        <div  class="merch__container"  >
             <div class="merch">
-                <a href="https://sonidomuchacho.com/discos/pre-order-rojuu-kor-kor-lake/"><div class="merch__img-uno">
+                <a href="https://sonidomuchacho.com/discos/pre-order-rojuu-kor-kor-lake/"><div data-aos="flip-up" class="merch__img-uno">
                     <!--Fondo bckgrnd img-->
                 </div></a>
                 <div class="merch__info-uno">
@@ -105,7 +102,7 @@
                 </div>
             </div>
             <div class="merch">
-                <a target="_blank" href="https://sonidomuchacho.com/discos/pre-order-rojuu-grandes-hits-antes-de-los-18/"><div class="merch__img-dos">
+                <a target="_blank" href="https://sonidomuchacho.com/discos/pre-order-rojuu-grandes-hits-antes-de-los-18/"><div data-aos="flip-up" class="merch__img-dos">
                     <!--Fondo bckgrnd img-->
                 </div></a>
                 <div class="merch__info-dos">
@@ -113,7 +110,7 @@
                 </div>
             </div>
             <div class="merch">
-                <div class="merch__img-tres">
+                <div data-aos="flip-up" class="merch__img-tres">
                     <!--Fondo bckgrnd img-->
                 </div>
                 <div class="merch__info-tres">
@@ -124,18 +121,43 @@
     </div>
         <!--Merch-->
 
+        <!--Seccion Carrousel-->
+    <div class="carrousel__box">
+        <h6>Fotos del artista</h6>
         
+        <div class="carrosuel__container">
+            <img class="slide fade-up" src="images/concierto1.jpg" alt="concierto">
+        </div>
+
+        
+
+    </div>
+        <!--Seccion Carrousel-->
 
     </main>
 
     <footer class="footer__container">
+        
         <div class="footer__social">
             <div class="redes__container"><a target="_blank" href="https://www.instagram.com/rojuu/"><i class="fa-brands fa-instagram"></i></a></div>
             <div class="redes__container"><a target="_blank" href="https://open.spotify.com/artist/04mTej6RpWzBxGwhfThpIi?si=deUtg9s0QwiDl2O4yJvezA"><i class="fa-brands fa-spotify"></i></a></div>
             <div class="redes__container" ><a target="_blank" href="https://www.youtube.com/channel/UC5c0hKxusjfse2J_SRRnkhQ"><i class="fa-brands fa-youtube"></i></a></div> 
         </div>
+
+        <div class="contact__container">
+            <a href="pages/contact.html">Contacto</a>
+        </div>
+
     </footer>
 
     <script src="https://kit.fontawesome.com/541c40839b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration:1000
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>

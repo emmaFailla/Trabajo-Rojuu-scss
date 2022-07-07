@@ -494,6 +494,11 @@
   }
 }
 
+@font-face {
+  font-family: "starina";
+  src: url(../fonts/OldLondon.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -544,7 +549,7 @@
 /*HEADER*/
 /*main*/
 .main__container {
-  height: 320vh;
+  height: 420vh;
 }
 
 .albumes__box {
@@ -612,6 +617,7 @@
   text-align: center;
   color: #f3f3f3;
   font-family: "montserrat";
+  font-size: 1.5rem;
 }
 
 .starina__info, .roku__info, .korkor__info, .rojuu__info {
@@ -799,11 +805,87 @@
 }
 
 /*main*/
+.carrousel__box {
+  background: #0a1214;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.carrousel__box h6 {
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  font-family: "Playfair Display";
+}
+
+.carrousel__box .carrousel__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border: solid black 2px;
+  overflow: hidden;
+}
+
+.carrousel__box .carrousel__container .slide {
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+}
+
 /*FOOTER*/
 .footer__container {
   background-image: url(images/crema.png);
   height: 10vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__container {
+  width: 20vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__container:hover {
+  background: #f3f3f3;
+}
+
+.contact__container a {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
 }
 
 .footer__social {
@@ -846,7 +928,176 @@
 }
 
 /*FOOTER*/
+.header__contacto {
+  height: 5vh;
+  background: #F9F9F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__contacto a {
+  font-family: "starina";
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.main__contacto {
+  height: 85vh;
+  background-image: url(images/concierto6.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  gap: 2rem;
+}
+
+.grid__container .grid-1 {
+  width: 70%;
+  background: #F9F9F9;
+  font-family: "starina";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.grid__container .grid-1 form {
+  height: 70%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: lightgrey;
+  border-radius: 5px;
+}
+
+.grid__container .grid-1 form textarea {
+  resize: none;
+}
+
+.grid__container .grid-1 form .input__contacto {
+  padding: 10px;
+}
+
+.grid__container .grid-1 form .mensaje__container {
+  font-family: "Playfair Display";
+  font-size: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__container .grid-1 form .mensaje__container h2 {
+  margin-bottom: 3px;
+}
+
+.grid__container .grid-1 form .enviar {
+  font-family: "Playfair Display";
+  font-size: .8rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.grid__container .grid-1 form .enviar:hover {
+  background-color: #fff;
+}
+
+.grid__container .grid-2 {
+  width: 30%;
+  background: #F9F9F9;
+}
+
+.grid__container .grid-2 .social__contacto {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__container .grid-2 .social__contacto i {
+  font-size: 10rem;
+  cursor: pointer;
+}
+
+.grid__container .grid-2 .social__contacto .instagram__contact:hover {
+  color: #9a36b3;
+}
+
+.grid__container .grid-2 .social__contacto .youtube__contact:hover {
+  color: #ff0000;
+}
+
+.grid__container .grid-2 .social__contacto .spotify__contact:hover {
+  color: #1dd05d;
+}
+
+.footer__contacto {
+  background: #F9F9F9;
+  height: 10vh;
+}
+
 @media only screen and (min-width: 1200px) {
+  .main__container {
+    height: 400vh;
+  }
   /*NAV*/
   .social__container {
     display: -webkit-box;
@@ -1130,9 +1381,6 @@
     background-image: url(images/comic.png);
   }
   /*MERCH*/
-  .main__container {
-    height: 300vh;
-  }
   /*Footer*/
   .footer__container {
     background-image: url(images/crema.png);
@@ -1157,9 +1405,33 @@
   .footer__social i:hover {
     cursor: pointer;
   }
-  /*Footer*/
 }
 
+@media only screen and (max-width: 800px) {
+  .grid__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid__container .grid-1 {
+    height: 100%;
+    width: 90vw;
+  }
+  .grid__container .grid-1 form {
+    height: 80%;
+    width: 90%;
+  }
+  .grid__container .grid-1 form textarea {
+    width: 90%;
+  }
+  .grid__container .grid-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: none;
+  }
+}
+
+/*Footer*/
 @-webkit-keyframes inicio {
   0% {
     -webkit-transform: translateY(-20%);
@@ -1172,7 +1444,6 @@
     opacity: 1;
   }
 }
-
 @keyframes inicio {
   0% {
     -webkit-transform: translateY(-20%);
